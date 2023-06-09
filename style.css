@@ -3,8 +3,14 @@
     src: url('./font/Norse-Bold.otf');
 }
 
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 body {
     font-family:'Times New Roman', Times, serif;
+    background-color: #eee;
 }
 
 em {
@@ -14,7 +20,7 @@ em {
 .container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 #side-container {
@@ -36,7 +42,7 @@ em {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 50px;
+    height: 90%;
 }
 
 #side-container .logo {
@@ -68,10 +74,91 @@ em {
 }
 
 #main-container h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 600px;
+    padding-left: 50px;
+}
+
+#signup-form {
+    width: 100%;
+    height: 50%;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#signup-form .button-container {
+    background-color: #eee;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+#signup-form .button-container button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#signup-form .button-container button:active {
+    transform: scale(0.98);
+}
+
+#signup-form .button-container a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#signup-form .form-group {
+    display: flex;
+    justify-content: space-between;
     max-width: 600px;
 }
 
-#main-container h3 {
+#signup-form .form-group input {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#signup-form .form-group input:invalid {
+    border: 1px solid red;
+}
+
+#signup-form .form-group input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 26, 255);
+}
+
+#signup-form .form-item label {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+}
+
+#signup-form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: white;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 2px 2px 5px;
+}
+
+#signup-form fieldset legend {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 1.25rem;
     font-weight: bold;
-    font-size: 1.5rem;
 }
