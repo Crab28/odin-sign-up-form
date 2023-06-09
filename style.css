@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 #main-container {
@@ -30,3 +31,30 @@
     padding: 50px;
 }
 
+#side-container .logo {
+    font-family: 'Norse-Bold';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 135px;
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 10px 0;
+}
+
+#side-container .logo img {
+    width: 15%;
+}
+
+#side-container .logo h1 {
+    font-size: 4rem;
+}
+
+#side-container a,
+#side-container .credits {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
