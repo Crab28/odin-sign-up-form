@@ -129,13 +129,13 @@ em {
     margin-bottom: 30px;
 }
 
-#signup-form .form-group input:invalid {
-    border: 1px solid red;
-}
-
 #signup-form .form-group input:focus {
     outline: none;
     border: 1px solid rgb(0, 26, 255);
+}
+
+#signup-form .form-group input:focus:invalid {
+    border: 1px solid red;
 }
 
 #signup-form .form-item label {
